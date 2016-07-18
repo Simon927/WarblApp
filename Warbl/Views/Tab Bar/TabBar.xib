@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kgd-Ag-rW0" userLabel="View - Tab Bar" customClass="TabBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cfc-MW-otG" userLabel="Img - Background">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YO-rl-Lbd" userLabel="Btn - Feed">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="tabbar_feed" backgroundImage="tabbar_background">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_feed_selected" backgroundImage="tabbar_background"/>
+                    <connections>
+                        <action selector="onBtnFeed:" destination="kgd-Ag-rW0" eventType="touchUpInside" id="TLz-Vq-aoS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dca-LC-gKZ" userLabel="Btn - Featured">
+                    <rect key="frame" x="64" y="0.0" width="64" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="tabbar_featured" backgroundImage="tabbar_background">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_featured_selected" backgroundImage="tabbar_background"/>
+                    <connections>
+                        <action selector="onBtnFeatured:" destination="kgd-Ag-rW0" eventType="touchUpInside" id="DP5-Se-WkM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mf9-ns-3Ei" userLabel="Btn - Account">
+                    <rect key="frame" x="128" y="0.0" width="64" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="tabbar_account" backgroundImage="tabbar_background">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_account_selected" backgroundImage="tabbar_background"/>
+                    <connections>
+                        <action selector="onBtnAccount:" destination="kgd-Ag-rW0" eventType="touchUpInside" id="B3I-5I-9GI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGx-GW-R51" userLabel="Btn - Follow">
+                    <rect key="frame" x="192" y="0.0" width="64" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="tabbar_follow" backgroundImage="tabbar_background">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_follow_selected" backgroundImage="tabbar_background"/>
+                    <connections>
+                        <action selector="onBtnFollow:" destination="kgd-Ag-rW0" eventType="touchUpInside" id="kbX-hq-Y5G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u49-jl-cxD" userLabel="Btn - Notification">
+                    <rect key="frame" x="256" y="0.0" width="64" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="tabbar_notification" backgroundImage="tabbar_background">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_notification_selected" backgroundImage="tabbar_background"/>
+                    <connections>
+                        <action selector="onBtnNotification:" destination="kgd-Ag-rW0" eventType="touchUpInside" id="Y5g-ax-AXy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnForAccount" destination="mf9-ns-3Ei" id="5JU-Ee-BKP"/>
+                <outlet property="btnForFeatured" destination="Dca-LC-gKZ" id="kqE-7Y-GSP"/>
+                <outlet property="btnForFeed" destination="6YO-rl-Lbd" id="Hm4-51-GDA"/>
+                <outlet property="btnForFollow" destination="bGx-GW-R51" id="bKP-zH-1bj"/>
+                <outlet property="btnForNotification" destination="u49-jl-cxD" id="KQJ-15-Bb0"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_account" width="20" height="21"/>
+        <image name="tabbar_account_selected" width="20" height="21"/>
+        <image name="tabbar_background" width="64" height="50"/>
+        <image name="tabbar_featured" width="23" height="22"/>
+        <image name="tabbar_featured_selected" width="23" height="22"/>
+        <image name="tabbar_feed" width="26" height="22"/>
+        <image name="tabbar_feed_selected" width="26" height="22"/>
+        <image name="tabbar_follow" width="22" height="21"/>
+        <image name="tabbar_follow_selected" width="22" height="21"/>
+        <image name="tabbar_notification" width="21" height="22"/>
+        <image name="tabbar_notification_selected" width="21" height="22"/>
+    </resources>
+</document>
